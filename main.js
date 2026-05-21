@@ -2,6 +2,11 @@ let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 let renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("game") });
 
+document.getElementById("startBtn").onclick = () => {
+  document.body.requestPointerLock();
+  document.getElementById("startBtn").style.display = "none";
+};
+
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 // LIGHT
