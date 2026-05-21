@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FPS Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud">
+  <div id="health">Health: 100</div>
+  <div id="ammo">Ammo: 10</div>
+  <div id="score">Score: 0</div>
+</div>
+
+<!-- Mobile Controls -->
+<div id="mobileControls">
+   <div id="joystick">
+       <div id="stick"></div>
+  </div>
+  <button id="shootBtn">SHOOT</button>
+  <button id="jumpBtn">JUMP</button>
+  <button id="reloadBtn">RELOAD</button>
+</div>
+
+<canvas id="game"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.158/build/three.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
